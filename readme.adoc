@@ -1,0 +1,45 @@
+= Sopel Modules
+
+Jeremy is built with Python. 
+This is where we edit Jeremy's brain. :100:
+
+This repository hosts the python scripts for modules that define custom 
+commands for Jeremy, + 
+an IRC bot built on https://github.com/sopel-irc/sopel[Sopel] who lives inthepihole.
+
+== Commands
+
+Jeremy will respond to commands that begin with a 
+full-stop, e.g. typing `.help` will print a general help page. +
+To get search engine results on what a graviton pulse is, type `.search graviton pulse`. 
+Most commands have to be typed at the beginning of a sentence.
+
+For a full list of Jeremy's commands, type `.commands`. He might send you a private message with a list of commands, or do some other funky stuff.
+
+=== New Commands
+
+New commands are defined in these modules. For example, the https://github.com/tcob/modules/blob/master/helloworld.py#L3[`helloworld.py` module] defines the `.helloworld` command. 
+This module is triggered whenever someone starts a sentence with `.helloworld`.
+The command is defined with the following line:
+
+```python
+@sopel.module.commands('helloworld')
+```
+
+and the response is defined as 
+
+```python
+def helloworld(bot, trigger):
+    bot.say('Hello, world!')
+```
+
+== InThePIHOLE Details
+
+Server ::
+`inthepihole.ddns.net`
+
+Port ::
+`6667`
+
+Jeremy's Room :: 
+`#pihole-chats`
