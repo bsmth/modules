@@ -3,10 +3,6 @@
 Jeremy is built with Python. 
 This is where we edit Jeremy's brain. :100:
 
-This repository hosts the python scripts for modules that define custom 
-commands for Jeremy, + 
-an IRC bot built on https://github.com/sopel-irc/sopel[Sopel] who lives inthepihole.
-
 == Commands
 
 Jeremy will respond to commands that begin with a 
@@ -32,6 +28,10 @@ and the response is defined as
 def helloworld(bot, trigger):
     bot.say('Hello, world!')
 ```
+
+== About Jeremy
+
+Jeremy is built on https://github.com/sopel-irc/sopel[Sopel].
 
 == InThePIHOLE Details
 
